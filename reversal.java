@@ -19,14 +19,14 @@ public class reversal {
         }
     }
 
-    private void revert(Node currentNode, Node previousNode) {
-        if (currentNode.next == null) {
-            head = currentNode; // текущая становиться началом
+    private void revert(Node currentNode, Node previousNode) {// текущая и предидущая
+        if (currentNode.next == null) {// дошли до последнего
+            head = currentNode; // обновляем head последняя становиться началом
         } else {
-            revert(currentNode.next, currentNode);// следующий и его предидущий(т.е текущий)
+            revert(currentNode.next, currentNode);// следующий и текущий идет дальше рекурсия
         }
-        currentNode.next = previousNode;// текущий принимает значение предидущего
-        previousNode.next = null;// меняем значение для следующего за предидущем
+        currentNode.next = previousNode;// обратное значение
+        previousNode.next = null;// меняем значение для предидущего
 
     }
 
