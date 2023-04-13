@@ -26,7 +26,7 @@ public class reversal {
             revert(currentNode.next, currentNode);// следующий и текущий идет дальше рекурсия
         }
         currentNode.next = previousNode;// обратное значение
-        previousNode.next = null;// меняем значение для предидущего
+        previousNode.next = null;// меняем значение для предидуще
 
     }
 
