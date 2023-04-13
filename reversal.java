@@ -14,7 +14,7 @@ public class reversal {
     public void revert() {
 
         if (head != null && head.next != null) {// если список не пустой и след значение
-            revert(head.next, head);// вызываем метод для начального и след за ним элемента
+            revert(head.next, head);// вызываем метод для начального и след за ним элемент
 
         }
     }
